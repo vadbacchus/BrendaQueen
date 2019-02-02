@@ -1,0 +1,53 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_mixins/_smart-grid"
+
+*,
+*::before,
+*::after
+	box-sizing: border-box
+
+
++reset()
+
+::placeholder
+	color: #fff
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+	// scroll-behavior: smooth
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	background: #000
+	input, textarea
+			border: #666 1px solid
+			outline: none
+
+
+
+
+.main
+	width: 100%
+	overflow: hidden
+
+.wrapper
+	+wrapper()
+
+@import "_parts/_header.sass"
+@import "_parts/_advantages.sass"
+@import "_parts/_features.sass"
+@import "_parts/_order.sass"
+@import "_parts/_footer.sass"
+
+

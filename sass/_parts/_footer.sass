@@ -1,0 +1,44 @@
+.footer
+	border-top: 5px solid #fff
+	background: #0E0E0E
+	padding: 50px 0
+
+	.wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		+xs-block()
+			flex-direction: column
+
+
+
+.copyright
+	color: #fff
+	font-size: 20px
+
+	+sm-block()
+		font-size: 16px
+
+	+xs-block()
+		text-align: center
+
+.social
+
+	+xs-block()
+		margin: 30px 0 0 0 
+
+	i
+		color: #fff
+		font-size: 50px
+		margin: 0 20px
+		cursor: pointer
+		transition: .5s
+
+		+sm-block()
+			font-size: 30px
+
+
+
+		&:hover
+			color: $accent
